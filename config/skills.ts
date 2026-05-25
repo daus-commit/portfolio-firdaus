@@ -26,8 +26,22 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "Render",
     description:
       "Deploy and manage web apps, APIs, and static sites instantly with seamless cloud hosting infrastructure.",
-    rating: 4,
+    rating: 5,
     icon: Icons.render,
+  },
+  {
+    name: "Vercel",
+    description:
+      "Deploy and manage web apps, APIs, and static sites instantly with seamless cloud hosting infrastructure.",
+    rating: 5,
+    icon: Icons.vercel,
+  },
+  {
+    name: "Microsoft Office",
+    description:
+      "Deploy and manage web apps, APIs, and static sites instantly with seamless cloud hosting infrastructure.",
+    rating: 5,
+    icon: Icons.microsoft,
   },
   {
     name: "Github",

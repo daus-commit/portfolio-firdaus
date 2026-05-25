@@ -38,6 +38,7 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
 import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import { IoLogoMicrosoft } from "react-icons/io5";
 import {
   HiBriefcase,
   HiOutlineExternalLink,
@@ -76,6 +77,7 @@ import {
   SiUnity,
   SiFlutter,
   SiInstagram,
+  SiVercel,
 } from "react-icons/si";
 
 export const Icons = {
@@ -147,6 +149,8 @@ export const Icons = {
   unity: SiUnity,
   flutter: SiFlutter,
   instagram: (SiInstagram ?? (() => null)) as any,
+  vercel: SiVercel,
+  microsoft: IoLogoMicrosoft,
 
 
   // Custom high-fidelity inline SVG component for OpenRouter
