@@ -10,106 +10,91 @@ export interface skillsInterface {
 export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Laravel",
-    description:
-      "Build elegant, secure, and highly scalable web applications using PHP's premium MVC framework.",
+    description: "Build secure, scalable PHP web applications using an elegant MVC framework.",
     rating: 5,
     icon: Icons.laravel,
   },
   {
     name: "Yii2 Advanced",
-    description:
-      "Develop robust enterprise-grade backends with clean tier separation and powerful scaffolding tools.",
+    description: "Develop enterprise-grade PHP backends with tier-separated application structures.",
     rating: 5,
     icon: Icons.yii,
   },
   {
     name: "Render",
-    description:
-      "Deploy and manage full-stack web applications, backend APIs, and databases with seamless cloud infrastructure.",
+    description: "Deploy and host full-stack web applications, APIs, and databases instantly.",
     rating: 4,
     icon: Icons.render,
   },
   {
     name: "Vercel",
-    description:
-      "Optimize frontend deployment with serverless functions, fast global CDNs, and seamless Git-integrated workflows.",
+    description: "Deploy fast, Git-integrated frontend applications and serverless functions.",
     rating: 4,
     icon: Icons.vercel,
   },
   {
     name: "Microsoft Office",
-    description:
-      "Create high-quality documentation, user manuals, project reports, and data spreadsheets using professional productivity tools.",
+    description: "Create professional documentation, technical user manuals, and spreadsheets.",
     rating: 5,
     icon: Icons.microsoft,
   },
   {
     name: "Github",
-    description:
-      "Manage codebase history, collaborate securely on repositories, and automate deployment workflows.",
+    description: "Manage codebase version control, collaborate on repositories, and track changes.",
     rating: 5,
     icon: Icons.github,
   },
   {
     name: "OpenRouter.ai",
-    description:
-      "Integrate diverse, advanced Large Language Models into backend code workflows using a unified API key.",
+    description: "Integrate multiple Large Language Models into applications via a single API gateway.",
     rating: 4,
     icon: Icons.openrouter,
   },
   {
     name: "Unity Engine",
-    description:
-      "Build immersive cross-platform interactive software and real-time virtual environment applications.",
+    description: "Develop cross-platform interactive software and real-time virtual environments.",
     rating: 3,
     icon: Icons.unity,
   },
   {
     name: "Flutter",
-    description:
-      "Craft beautiful, natively compiled cross-platform mobile and desktop interfaces from a single codebase.",
+    description: "Build natively compiled cross-platform mobile and web apps from one codebase.",
     rating: 2,
     icon: Icons.flutter,
   },
   {
     name: "Next.js",
-    description:
-      "Build high-performance, SEO-friendly React web applications with hybrid static and server rendering.",
+    description: "Build high-performance, SEO-optimized React applications with server rendering.",
     rating: 2,
     icon: Icons.nextjs,
   },
   {
     name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
+    description: "Quickly construct responsive web layouts using a popular component framework.",
     rating: 4,
     icon: Icons.bootstrap,
   },
   {
     name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+    description: "Design, manage, and optimize relational databases for dynamic applications.",
     rating: 4,
     icon: Icons.mysql,
   },
   {
     name: "HTML/Blade",
-    description:
-      "Structure web layouts seamlessly with modern HTML semantic elements and powerful Laravel template engines.",
+    description: "Structure web semantic layouts using HTML and the Laravel Blade templating engine.",
     rating: 5,
     icon: Icons.html5,
   },
   {
     name: "CSS",
-    description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
+    description: "Design custom visual styles, layouts, and animations for web viewports.",
     rating: 4,
     icon: Icons.css3,
   },
   {
     name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
+    description: "Style websites rapidly utilizing a utility-first CSS design framework.",
     rating: 4,
     icon: Icons.tailwindcss,
   },
