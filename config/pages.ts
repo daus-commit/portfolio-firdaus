@@ -63,16 +63,16 @@ export const pagesConfig: PagesConfig = {
       description: "Firdaus Hakimi's resume.",
     },
   },
-  // blogs: {
-  //   title: "Certificates",
-  //   description:
-  //     "Thoughts on AI, software engineering, and building in public.",
-  //   metadata: {
-  //     title: "Blogs",
-  //     description:
-  //       "Firdaus Hakimi's certificates — thoughts on AI, software engineering, and building in public.",
-  //   },
-  // },
+  blogs: {
+    title: "Certificates",
+    description:
+      "Thoughts on AI, software engineering, and building in public.",
+    metadata: {
+      title: "Blogs",
+      description:
+        "Firdaus Hakimi's certificates — thoughts on AI, software engineering, and building in public.",
+    },
+  },
   experience: {
     title: "Experience",
     description: "Professional journey and career timeline.",
