@@ -88,7 +88,7 @@ export type ValidSkills =
   | "OpenRouter.ai API"
   | "Yii2 Advance"
   | "muyuym(AdminLTE)"
-  |  "mdmsoft(RBAC)"
+  | "mdmsoft(RBAC)"
   | "Gii(CRUD)"
   | "Joomla CMS Administrator"
   | "HTML5"
@@ -100,7 +100,11 @@ export type ValidSkills =
   | "Laravel 12"
   | "HTML/Blade"
   | "EmailJS"
-  | "Render";
+  | "Render"
+  | "Unity Engine"
+  | "Blender"
+  | "Meta Quest 3"
+  | "Meta Horizon Developer Center";
 
 export type ValidCategory =
   | "Full Stack"
@@ -114,7 +118,9 @@ export type ValidCategory =
   | "AI Integration"
   | "CMS"
   | "Design"
-  | "Graphic Design";
+  | "Graphic Design"
+  | "VR Game Dev"
+  | "Rendering";
   
   
 

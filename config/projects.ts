@@ -29,8 +29,45 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   //First Project
-  {
+    {
     id: "1",
+    companyName: "VR Korban: Islamic Education",
+    type: "Professional", // Swapped to Professional for the client context
+    category: ["VR Game Dev", "3D Modeling", "Rendering"],
+    shortDescription: "An immersive virtual reality educational application custom-developed for a client to teach the Islamic ritual of Korban on the Meta Quest 3.",
+    websiteLink: "https://drive.google.com/file/d/16jeZyVsv1osiai6jKMlTjVYH8J6sR19l/view?usp=sharing",
+    techStack: [
+      "Unity Engine",
+      "Blender",
+      "Meta Quest 3",
+      "Meta Horizon Developer Center",
+    ],
+    startDate: new Date("2025-08-11"),
+    endDate: new Date("2026-05-22"),
+    companyLogoImg: "/projects/portfolio/projectVR.png",
+    pagesInfoArr: [
+      {
+        title: "Client-Commissioned VR Simulation",
+        description: "An interactive, step-by-step 3D environment built to client technical specifications and educational guidelines.",
+        imgArr: [],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "I contract-developed an immersive virtual reality educational simulation tailored to fulfill a client's specific training requirements for the Islamic Korban ritual.",
+        "The project focused on executing the client's instructional goals by designing optimized 3D scenes in Blender and building interactive educational mechanisms inside Unity for direct deployment on the Meta Quest 3."
+      ],
+      bullets: [
+        "Collaborated with the client throughout the development phase to translate exact ritual guidelines into functional VR workflows.",
+        "Modeled and textured custom, performance-optimized 3D assets in Blender according to client-approved design specifications.",
+        "Engineered smooth interactive mechanics and player controls in Unity Engine to match client requirements for an intuitive user experience.",
+        "Deployed and tested iterations via the Meta Horizon Developer Center to ensure stable standalone headset performance.",
+      ],
+    },
+  },
+
+    {
+    id: "2",
     companyName: "Laravel 12 Admin Dashboard Template with AI Generator",
     type: "Personal",
     category: ["Web Dev", "Backend", "AI Integration", "MySQL"],
@@ -73,7 +110,7 @@ export const Projects: ProjectInterface[] = [
 
   //Second Project
   {
-    id: "2",
+    id: "3",
     companyName: "Yii2 Advanced Admin Dashboard Template",
     type: "Personal",
     category: ["Web Dev", "Backend", "MySQL"],
@@ -115,7 +152,7 @@ export const Projects: ProjectInterface[] = [
 
   //Third Project
   {
-    id: "3",
+    id: "4",
     companyName: "Landing Website for Beambox Malaysia",
     type: "Professional",
     category: ["Web Dev", "CMS", "UI/UX"],
@@ -155,7 +192,7 @@ export const Projects: ProjectInterface[] = [
   
   //Fourth Project
   {
-    id: "4",
+    id: "5",
     companyName: "Banner Design for SRAI D’MYS Seksyen 7",
     type: "Professional",
     category: ["Design", "Graphic Design"],
@@ -191,7 +228,7 @@ export const Projects: ProjectInterface[] = [
 
   //Fifth Project
   {
-    id: "5",
+    id: "6",
     companyName: "Final Report Platform for Malaysian Students",
     type: "Personal",
     category: ["Web Dev", "Frontend", "AI Integration"],
@@ -228,6 +265,9 @@ export const Projects: ProjectInterface[] = [
       ],
     },
   },
+
+//Sixth Project
+  
   
   // {
   //   id: "portfolio-card",

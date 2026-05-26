@@ -1,149 +1,129 @@
-<a href="https://buymeachai.ezee.li/namanbarkiya" target="_blank" rel="noopener noreferrer"><img src="https://res.cloudinary.com/dvt5vkfwz/image/upload/v1767625332/buy_chai_naman.png" alt="Buy Me A Chai" width="200"></a>
+# Firdaus Hakimi — Portfolio
 
-# Next.js 16 Developer Portfolio Template
-
-A modern, responsive, and SEO-optimized **Next.js 16 portfolio template** designed for developers, designers, and professionals. This open-source project helps you showcase your skills, experience, and projects with an elegant interface that stands out. Built with server-side rendering, TypeScript, and the latest web standards for optimal performance.
-
-## ✨ Key Features
-
-- **Professional Experience Timeline**: Showcase your career journey with a visually appealing timeline
-- **Project Showcase**: Display your technical projects with detailed information and live demos
-- **Multiple Themes**: Dark, Light, Retro, Cyberpunk, Aurora, Synthwave, and Paper themes
-- **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
-- **100% Performance Score**: Fully optimized for speed and Core Web Vitals
-- **SEO-Ready**: Structured data, meta tags, and optimized content
-- **Modern Tech Stack**: Next.js 16, React 19, TypeScript, Tailwind CSS, and shadcn/ui
-- **Easy Customization**: Well-organized code structure with minimal effort required
-- **Animations**: Subtle animations for engaging user experience
-- **Analytics Integration**: Ready for Google Analytics tracking
-- **Contact Form**: Functional contact form with validation
-- **Open Source**: Free to use and modify for your personal portfolio
-
-## 🚀 Demo
-
-View the live demo at [https://nbarkiya.xyz/](https://nbarkiya.xyz)
-
-https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
-
-## Ranks #1 on AI Search (top-notch AEO/GEO)
-
-https://github.com/user-attachments/assets/fc071310-9d1c-4832-877f-23f9569893d7
-
-## 🛠️ Tech Stack
-
-- **Framework**: [Next.js 16](https://nextjs.org/) with Turbopack
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **UI Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Form Handling**: Server actions with validation
-- **Analytics**: Google Analytics + Vercel Analytics
-- **Deployment**: [Vercel](https://vercel.com)
-
-## 🔧 Getting Started
-
-To get started with your own portfolio website:
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/namanbarkiya/minimal-next-portfolio.git my-portfolio
-   cd my-portfolio
-   ```
-
-2. Copy the contents of `.env.copy` to a new `.env` file and fill in the required information.
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your web browser to see the website.
-
-## 🎨 Customization
-
-Easily personalize your portfolio using the configuration files below:
-
-| Section            | How to Customize                                       | File Location             |
-| ------------------ | ------------------------------------------------------ | ------------------------- |
-| **Personal Info**  | Edit your name, bio, and social links                  | `config/site.ts`          |
-| **Skills**         | Add or modify the technologies and skills you showcase | `config/skills.ts`        |
-| **Projects**       | Highlight your technical projects                      | `config/projects.ts`      |
-| **Experience**     | Add your work and professional experience              | `config/experience.ts`    |
-| **Contributions**  | Display open-source/community contributions            | `config/contributions.ts` |
-| **Colors & Theme** | Customize color palette and themes                     | `tailwind.config.js`      |
-
-All configuration files are well-organized and documented for a smooth customization process.
-
-## 🌟 Features In Detail
-
-### Professional Experience Timeline
-
-An interactive, animated timeline that showcases your career journey with expandable sections for details about each position and company.
-
-### Project Showcase
-
-Display your technical projects with detailed information, technologies used, live demo links, and comprehensive project descriptions.
-
-### Skills Showcase
-
-Visually represent your technical and soft skills with customizable ratings and categories.
-
-### Contact Form Integration
-
-A ready-to-use contact form that can connect to various backend services.
-
-### SEO Optimization
-
-Built-in SEO features with proper meta tags, structured data, and semantic HTML.
-
-## 📱 Performance and Responsiveness
-
-![best-portfolio-website-score](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/3fb9c94d-9d99-4e98-92ea-14aadc91b568)
-![100-score-vercel](https://github.com/namanbarkiya/minimal-next-portfolio/assets/82203888/7cfe28cc-b619-4199-9dab-1cf16723b86d)
-
-This template is optimized for:
-
-- 100% Lighthouse score
-- Excellent Core Web Vitals metrics
-- Responsive design across all device sizes
-- Fast loading times with proper image optimization
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgements
-
-- Design inspired by modern portfolio best practices
-- Built by [Firdaus Hakimi](https://github.com/namanbarkiya)
-- Icons from [Lucide](https://lucide.dev/)
-
-## 💻 Deploy on Vercel
-
-The easiest way to deploy your portfolio is using [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=namanbarkiya/minimal-next-portfolio&type=Date)](https://star-history.com/#namanbarkiya/minimal-next-portfolio&Date)
+> Personal portfolio website built with Next.js — showcasing projects, experience, skills, and contributions as an Applied AI Engineer.
 
 ---
 
-**Built with ❤️ by [Firdaus Hakimi](https://github.com/namanbarkiya)**
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 14 (App Router, Turbopack)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + MUI
+- **Icons:** Lucide React, React Icons
+- **State:** React Hooks
+- **Email Sender:** Emailjs
+- **LLM AI Gateaway:** OpenRouter.ai
+- **Analytics:** Google Analytics (GA4)
+
+---
+
+## 📁 Project Structure
+
+```
+portfolio-firdaus/
+├── app/                  # Next.js App Router pages
+├── config/               # Site content & data
+│   ├── site.ts           # Name, bio, URL, metadata
+│   ├── socials.ts        # Social media links
+│   ├── experience.ts     # Work experience
+│   ├── projects.ts       # Projects showcase
+│   ├── skills.ts         # Tech stack & skills
+│   ├── contributions.ts  # Open source contributions
+│   ├── pages.ts          # Navigation pages
+│   └── routes.ts         # App routes
+├── components/           # Reusable UI components
+├── public/               # Static assets (images, resume, favicon)
+└── .env.local            # Environment variables (not committed)
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) v18 or later
+- [Git](https://git-scm.com)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/daus-commit/minimal-next-portfolio.git
+
+# Navigate into the project
+cd minimal-next-portfolio
+
+# Install dependencies
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_RESUME_LINK=/resume.pdf
+```
+
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID` | Google Analytics GA4 Measurement ID |
+| `NEXT_PUBLIC_RESUME_LINK` | URL or path to your resume PDF |
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## ✏️ Customization
+
+All personal content lives inside the `config/` folder. No need to touch any page components.
+
+| File | What to Edit |
+|---|---|
+| `config/site.ts` | Name, title, bio, URL, OG image, favicon |
+| `config/socials.ts` | GitHub, LinkedIn, Twitter, TikTok links |
+| `config/experience.ts` | Work history and job roles |
+| `config/projects.ts` | Projects, descriptions, and links |
+| `config/skills.ts` | Tech stack and skill icons |
+| `config/contributions.ts` | Open source contributions |
+
+### Changing the Profile Photo
+
+Replace the avatar image inside the `public/` folder, keeping the same filename.
+
+### Changing the Resume
+
+Place your `resume.pdf` inside the `public/` folder and set:
+
+```env
+NEXT_PUBLIC_RESUME_LINK=/resume.pdf
+```
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed to [Vercel](https://vercel.com) in one click:
+
+1. Push your code to GitHub
+2. Import the repo on [vercel.com](https://vercel.com)
+3. Add your environment variables in the Vercel dashboard
+4. Deploy ✅
+
+---
+
+## 📄 License
+
+This project is based on the [minimal-next-portfolio](https://github.com/namanbarkiya/minimal-next-portfolio) template by [Naman Barkiya](https://github.com/namanbarkiya).
+
+---
+
+Made with ❤️ by **Firdaus Hakimi**
