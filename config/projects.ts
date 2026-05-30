@@ -66,8 +66,87 @@ export const Projects: ProjectInterface[] = [
     },
   },
 
-    {
+  
+  //Third Project
+  {
     id: "2",
+    companyName: "Landing Website for Beambox Malaysia",
+    type: "Professional",
+    category: ["Web Dev", "CMS", "UI/UX"],
+    shortDescription:
+      "A professionally developed, fully responsive corporate landing website for Beambox Malaysia, engineered using the Joomla Content Management System (CMS) with custom layouts and optimized web performance.",
+    websiteLink: "https://beambox.my/index.php",
+    techStack: [
+      "Joomla CMS",
+      "HTML5",
+      "CSS3",
+      "MySQL",
+    ],
+    startDate: new Date("2026-05-16"),
+    endDate: new Date("2026-05-22"),
+    companyLogoImg: "/projects/portfolio/beamboxCMS.png",
+    pagesInfoArr: [
+      {
+        title: "Corporate Landing Page & Content Modules",
+        description:
+          "A modern, high-converting homepage featuring custom structured modules, smooth section navigation, responsive service showcases, and localized contact frameworks.",
+        imgArr: [],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "I developed and deployed the official landing website for Beambox Malaysia using the Joomla CMS framework to deliver an impactful, easily maintainable digital web presence.",
+        "The project focused on translating brand requirements into a clean, intuitive layout by customizing core Joomla modules, streamlining frontend extension rendering, and establishing a robust backend structure for straightforward content updates.",
+      ],
+      bullets: [
+        "Architected a responsive corporate landing page using Joomla CMS, guaranteeing visual consistency and pixel-perfect rendering across mobile, desktop, and tablet viewports.",
+        "Customized Joomla templates, custom styles, and core modules to match the corporate identity and layout requirements of Beambox Malaysia.",
+        "Configured secure backend administrator flows and article categories to allow seamless client-side content management and rapid marketing adjustments.",
+        "Optimized frontend performance parameters, including script loading behaviors and image asset delivery, to minimize page load times and boost user retention.",
+      ],
+    },
+  },
+
+//Third Project
+  {
+    id: "3",
+    companyName: "Landing Website Barokah Bersatu Enterprise",
+    type: "Professional",
+    category: ["Web Dev", "Frontend", "AI Integration"],
+    shortDescription: "A professional, fully responsive landing website built with Next.js, featuring an AI text helper via OpenRouter and contact forms via EmailJS.",
+    websiteLink: "https://barokah-bersatu-enterprise.vercel.app",
+    techStack: [
+      "Next.js",
+      "OpenRouter.ai API",
+      "EmailJS",
+      "Tailwind CSS",
+    ],
+    startDate: new Date("2026-05-27"),
+    endDate: new Date("2026-05-30"),
+    companyLogoImg: "/projects/portfolio/barokah.png",
+    pagesInfoArr: [
+      {
+        title: "Corporate Landing Page",
+        description: "A modern corporate homepage optimized with smooth section navigation, responsive service showcases, and automated client inquiries.",
+        imgArr: [],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "I developed and deployed the official professional landing website for Barokah Bersatu Enterprise using Next.js to provide a fast, high-performance web presence.",
+        "The web application features an interactive user interface integrated with EmailJS for reliable client communication, alongside OpenRouter.ai to handle real-time automated text generation features directly from the frontend forms."
+      ],
+      bullets: [
+        "Architected a responsive corporate website using Next.js, ensuring excellent loading speeds and seamless layout consistency across all devices.",
+        "Integrated the OpenRouter.ai API to provide intelligent text helper capabilities directly on user input layouts.",
+        "Configured EmailJS backend integration to handle instant form notifications and client messaging routes without requiring a dedicated mail server.",
+        "Styled custom design layouts using utility-first principles to maximize user engagement and achieve modern conversion goals.",
+      ],
+    },
+  },
+
+    {
+    id: "4",
     companyName: "Laravel 12 Admin Dashboard Template with AI Generator",
     type: "Personal",
     category: ["Web Dev", "Backend", "AI Integration", "MySQL"],
@@ -108,9 +187,9 @@ export const Projects: ProjectInterface[] = [
     },
   },
 
-  //Second Project
+
   {
-    id: "3",
+    id: "5",
     companyName: "Yii2 Advanced Admin Dashboard Template",
     type: "Personal",
     category: ["Web Dev", "Backend", "MySQL"],
@@ -149,50 +228,10 @@ export const Projects: ProjectInterface[] = [
       ],
     },
   },
-
-  //Third Project
-  {
-    id: "4",
-    companyName: "Landing Website for Beambox Malaysia",
-    type: "Professional",
-    category: ["Web Dev", "CMS", "UI/UX"],
-    shortDescription:
-      "A professionally developed, fully responsive corporate landing website for Beambox Malaysia, engineered using the Joomla Content Management System (CMS) with custom layouts and optimized web performance.",
-    websiteLink: "https://beambox.my/index.php",
-    techStack: [
-      "Joomla CMS",
-      "HTML5",
-      "CSS3",
-      "MySQL",
-    ],
-    startDate: new Date("2026-05-16"),
-    endDate: new Date("2026-05-22"),
-    companyLogoImg: "/projects/portfolio/beamboxCMS.png",
-    pagesInfoArr: [
-      {
-        title: "Corporate Landing Page & Content Modules",
-        description:
-          "A modern, high-converting homepage featuring custom structured modules, smooth section navigation, responsive service showcases, and localized contact frameworks.",
-        imgArr: [],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "I developed and deployed the official landing website for Beambox Malaysia using the Joomla CMS framework to deliver an impactful, easily maintainable digital web presence.",
-        "The project focused on translating brand requirements into a clean, intuitive layout by customizing core Joomla modules, streamlining frontend extension rendering, and establishing a robust backend structure for straightforward content updates.",
-      ],
-      bullets: [
-        "Architected a responsive corporate landing page using Joomla CMS, guaranteeing visual consistency and pixel-perfect rendering across mobile, desktop, and tablet viewports.",
-        "Customized Joomla templates, custom styles, and core modules to match the corporate identity and layout requirements of Beambox Malaysia.",
-        "Configured secure backend administrator flows and article categories to allow seamless client-side content management and rapid marketing adjustments.",
-        "Optimized frontend performance parameters, including script loading behaviors and image asset delivery, to minimize page load times and boost user retention.",
-      ],
-    },
-  },
   
-  //Fourth Project
+
   {
-    id: "5",
+    id: "6",
     companyName: "Banner Design for SRAI D’MYS Seksyen 7",
     type: "Professional",
     category: ["Design", "Graphic Design"],
@@ -226,9 +265,9 @@ export const Projects: ProjectInterface[] = [
     },
   },
 
-  //Fifth Project
+
   {
-    id: "6",
+    id: "7",
     companyName: "Final Report Platform for Malaysian Students",
     type: "Personal",
     category: ["Web Dev", "Frontend", "AI Integration"],

@@ -104,7 +104,8 @@ export type ValidSkills =
   | "Unity Engine"
   | "Blender"
   | "Meta Quest 3"
-  | "Meta Horizon Developer Center";
+  | "Meta Horizon Developer Center"
+  | "NextJS";
 
 export type ValidCategory =
   | "Full Stack"
