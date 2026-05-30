@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Firdaus Hakimi - Applied Junior Programmer",
+  name: "Firdaus Hakimi - Junior Programmer with Fullstack Experience",
   authorName: "Firdaus Hakimi",
   username: "firdaushakimi",
   description:
-    "Firdaus Hakimi - Applied Junior Programmer",
+    "Firdaus Hakimi - Junior Programmer with Fullstack Experience",
   url: "https://nbarkiya.xyz",
   links: {
     twitter: "https://x.com/namanbarkiya",
@@ -19,6 +19,7 @@ export const siteConfig = {
   keywords: [
     "Firdaus Hakimi",
     "Applied Junior Programmer",
+    "Junior Programmer with Fullstack Experience",
     "AI Engineer",
     "Software Engineer",
     "Full Stack Developer",
