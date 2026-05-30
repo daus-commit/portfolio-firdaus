@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `https://portfolio-firdaus-umber.vercel.app}/skills`,
+      url: `https://portfolio-firdaus-umber.vercel.app/skills`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
