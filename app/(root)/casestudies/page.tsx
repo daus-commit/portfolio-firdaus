@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import PageContainer from "@/components/common/page-container";
-import CasestudiesCard from "@/components/casestudies/casestudies-card";
+import CasestudiesCardClient from "../casestudies-card-client";
 import { casestudiesUnsorted } from "@/config/casestudies";
 import { pagesConfig } from "@/config/pages";
 
@@ -16,7 +16,7 @@ export default function CaseStudiesPage() {
       title="Case Studies"
       description="Case studies and experiments."
     >
-      <CasestudiesCard
+      <CasestudiesCardClient
         casestudies={casestudiesUnsorted}
       />
     </PageContainer>

@@ -9,9 +9,9 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import casestudiesCard from "@/components/casestudies/casestudies-card";
 import React from "react";
 
+import CasestudiesCardClient from "./casestudies-card-client";
 
 // NOTE: `pagesConfig` doesn't include `casestudies` yet, so we hardcode the section text
 // and use `casestudiesUnsorted` directly below.
@@ -239,7 +239,7 @@ export default function IndexPage() {
             Case studies and experiments.
           </AnimatedText>
         </div>
-        {React.createElement(casestudiesCard, { casestudies: casestudiesUnsorted })}
+        <CasestudiesCardClient casestudies={casestudiesUnsorted} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/casestudies">
             <Button variant={"outline"} className="rounded-xl">

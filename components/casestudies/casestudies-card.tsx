@@ -1,7 +1,6 @@
-import Link from "next/link";
-
 import { Icons } from "@/components/common/icons";
 import { casestudiesInterface } from "@/config/casestudies";
+
 
 interface casestudiesCardProps {
   casestudies: casestudiesInterface[];
@@ -14,36 +13,45 @@ export default function casestudiesCard({
   return (
     <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
       {casestudies.map((casestudies, id) => (
-        <Link
-          href={casestudies.link}
-          target="_blank"
+        <div
           key={id}
           className="w-full min-w-0 h-full"
+          onClick={(e) => e.preventDefault()}
+          role="group"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            // ensure Enter/Space do not trigger navigation
+            if (e.key === "Enter" || e.key === " ") e.preventDefault();
+          }}
         >
           <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground transition-colors w-full h-full flex flex-col">
-            <Icons.externalLink
+
+            {/* <Icons.externalLink
               size={35}
               className="absolute bottom-3 right-3 border bg-background rounded-full p-1.5 sm:p-2 cursor-pointer text-muted-foreground z-10 w-8 h-8 sm:w-10 sm:h-10"
-            />
+            /> */}
             <div className="flex min-h-[170px] flex-col justify-between rounded-md p-4 sm:p-6 pb-12 sm:pb-6 flex-grow">
               <div className="flex flex-row justify-between items-start gap-2 mb-4 min-w-0">
                 <h3 className="font-bold flex space-x-2 items-center min-w-0 flex-1">
-                  <Icons.gitRepoIcon
+                  {/* <Icons.gitRepoIcon
                     size={18}
                     className="flex-shrink-0 sm:w-5 sm:h-5"
-                  />
+                  /> */}
                   <span className="truncate text-sm sm:text-base min-w-0">
                     {casestudies.repo}
                   </span>
                 </h3>
-                <Icons.gitBranch
+                {/* <Icons.gitBranch
                   size={18}
                   className="flex-shrink-0 sm:w-5 sm:h-5"
-                />
+                /> */}
               </div>
               <div className="space-y-3 sm:space-y-4 min-w-0">
                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3 break-words">
                   {casestudies.casestudiesDescription}
+                </p>
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3 break-words">
+                  {casestudies.casestudiesSolution}
                 </p>
                 <p className="text-xs sm:text-sm text-muted-foreground flex space-x-2 items-center min-w-0">
                   <Icons.gitOrgBuilding
@@ -57,7 +65,7 @@ export default function casestudiesCard({
               </div>
             </div>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );
