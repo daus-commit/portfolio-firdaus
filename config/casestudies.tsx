@@ -11,15 +11,15 @@ export const casestudiesUnsorted: casestudiesInterface[] = [
     casestudiesDescription:
       "Problem: Server Ai that I intalled from LLM Gateaway sometimes got down.",
     casestudiesSolution:
-      "Problem Solving: Setting the pre-rendering for the distant object by keeping the performance.",
+      "Problem Solving: Setting the pre-rendering for the distant object and keeping the performance.",
     repoOwner: "daus-commit",
   },
   {
     repo: "VR Korban: Islamic Education",
     casestudiesDescription:
-      "Problem: Lagging when entered into the VR Environment because the project fully render all items.",
+      "Problem: Lagging when entered into the VR Environment because the project fully render all existed objects.",
     casestudiesSolution:
-      "Problem Solving: Setting the pre-rendering for the distant object by keeping the performance.",
+      "Problem Solving: Setting the pre-rendering for the distant object and keeping the performance.",
     repoOwner: "daus-commit",
   },
   {
