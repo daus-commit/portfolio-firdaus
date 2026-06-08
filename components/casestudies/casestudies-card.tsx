@@ -47,10 +47,10 @@ export default function casestudiesCard({
                 /> */}
               </div>
               <div className="space-y-3 sm:space-y-4 min-w-0">
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3 break-words">
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
                   {casestudies.casestudiesDescription}
                 </p>
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-3 break-words">
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
                   {casestudies.casestudiesSolution}
                 </p>
                 <p className="text-xs sm:text-sm text-muted-foreground flex space-x-2 items-center min-w-0">
