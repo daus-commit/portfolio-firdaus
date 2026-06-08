@@ -9,6 +9,15 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
+import casestudiesCard from "@/components/casestudies/casestudies-card";
+import React from "react";
+
+
+// NOTE: `pagesConfig` doesn't include `casestudies` yet, so we hardcode the section text
+// and use `casestudiesUnsorted` directly below.
+
+import { casestudiesUnsorted } from "@/config/casestudies";
+
 import ContributionCard from "@/components/contributions/contribution-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
@@ -29,7 +38,7 @@ const LiquidEther = dynamic(() => import("@/components/ui/LiquidEther"));
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Firdaus Hakimi - Junior Programmer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Firdaus Hakimi - Junior FullStack Developer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -44,7 +53,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Junior Programmer",
+    jobTitle: "Junior FullStack Developer",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
@@ -107,7 +116,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Firdaus Hakimi - Junior Programmer Portfolio"
+            alt="Firdaus Hakimi - Junior FullStack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -122,11 +131,11 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Junior Programmer
+            Junior FullStack Developer
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Motivated Junior Programmer skilled in web application development,
+              Motivated Junior FullStack Developer skilled in web application development,
               UI/UX implementation, API integration, and responsive design using
               modern development frameworks.
             </p>
@@ -202,6 +211,37 @@ export default function IndexPage() {
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/projects">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+
+      {/* ───────────────────────── CASE STUDIES ───────────────────────── */}
+      <AnimatedSection
+        direction="up"
+        className="container space-y-6 bg-muted py-10 my-14"
+        id="casestudies"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            Case Studies
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            Case studies and experiments.
+          </AnimatedText>
+        </div>
+        {React.createElement(casestudiesCard, { casestudies: casestudiesUnsorted })}
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/casestudies">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
             </Button>

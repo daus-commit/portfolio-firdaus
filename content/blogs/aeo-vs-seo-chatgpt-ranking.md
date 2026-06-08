@@ -97,7 +97,7 @@ const faqSchema = {
 
 ### Descriptive Alt Text on Every Image
 
-AI models process alt text as fact sources. `alt="Firdaus Hakimi - Applied Junior Programmer Portfolio"` is a much better factual signal than `alt="profile photo"`.
+AI models process alt text as fact sources. `alt="Firdaus Hakimi - Applied Junior FullStack Developer Portfolio"` is a much better factual signal than `alt="profile photo"`.
 
 ## The Broader Principle
 

@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Firdaus Hakimi | Applied Junior Programmer",
+    name: "Firdaus Hakimi | Applied Junior FullStack Developer",
     short_name: "Firdaus Hakimi",
     description:
-      "Firdaus Hakimi - Applied Junior Programmer working at the intersection of AI, data, and scalable software systems.",
+      "Firdaus Hakimi - Applied Junior FullStack Developer working at the intersection of AI, data, and scalable software systems.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
