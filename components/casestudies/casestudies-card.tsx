@@ -37,7 +37,7 @@ export default function casestudiesCard({
                     size={18}
                     className="flex-shrink-0 sm:w-5 sm:h-5"
                   /> */}
-                  <span className="truncate text-sm sm:text-base min-w-0">
+                  <span className="text-2xl font-bold tracking-tight text-foreground">
                     {casestudies.repo}
                   </span>
                 </h3>
