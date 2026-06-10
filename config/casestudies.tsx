@@ -8,12 +8,12 @@ export interface casestudiesInterface {
 export const casestudiesUnsorted: casestudiesInterface[] = [
   {
     repo: "All Project Related with AI LLM Gateway",
-    casestudiesDescription: "Problem: API downtime or server failure from a single AI provider completely disrupts the system's text generation capabilities.",
-    casestudiesSolution: "Solution: Implemented an automated multi-LLM fallback layer that immediately reroutes requests to a backup AI model if the primary model fails or goes offline.",
+    casestudiesDescription: "Problem: Client reports of AI feature downtime caused by sudden server or API failures from a single LLM provider.",
+    casestudiesSolution: "Solution: Engineered a multi-LLM fallback architecture that instantly reroutes requests to a secondary backup model if the primary model goes offline.",
     repoOwner: "Firdaus Hakimi",
   },
   {
-    repo: "VR Korban: Islamic Education",
+    repo: "Virtual Reality(VR) Project",
     casestudiesDescription: "Problem: Severe performance lag and frame drops upon entering the VR environment due to the engine trying to render all 3D objects simultaneously.",
     casestudiesSolution: "Solution: Configured occlusion culling, level-of-detail (LOD) tracking, and distance-based pre-rendering to only render visible assets and preserve runtime performance.",
     repoOwner: "Firdaus Hakimi",
