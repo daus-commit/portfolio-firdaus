@@ -19,11 +19,13 @@ import CasestudiesCardClient from "./casestudies-card-client";
 import { casestudiesUnsorted } from "@/config/casestudies";
 
 import ContributionCard from "@/components/contributions/contribution-card";
+import casestudiesCard from "@/components/casestudies/casestudies-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredContributions } from "@/config/contributions";
+import { featuredcasestudies } from "@/config/casestudies";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
@@ -229,17 +231,17 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            Case Studies
+            {pagesConfig.casestudies.title}
           </AnimatedText>
           <AnimatedText
             as="p"
             delay={0.2}
             className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
           >
-            Case studies and experiments.
+            {pagesConfig.casestudies.description}
           </AnimatedText>
         </div>
-        <CasestudiesCardClient casestudies={casestudiesUnsorted} />
+        <CasestudiesCardClient casestudies={featuredcasestudies} />
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/casestudies">
             <Button variant={"outline"} className="rounded-xl">
@@ -248,6 +250,7 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
 
       {/* ───────────────────────── EXPERIENCE ───────────────────────── */}
       <AnimatedSection

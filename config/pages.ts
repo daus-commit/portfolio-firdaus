@@ -38,6 +38,15 @@ export const pagesConfig: PagesConfig = {
       description: "Firdaus Hakimi's projects in building web applications.",
     },
   },
+  casestudies: {
+    title: "Case Studies",
+    description: "Case studies and experiments.",
+    metadata: {
+      title: "Case Studies",
+      description:
+        "Firdaus Hakimi's case studies and experiments.",
+    },
+  },
   contact: {
     title: "Contact",
     description: "Let's connect and explore collaborations.",
