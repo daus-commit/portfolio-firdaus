@@ -24,7 +24,7 @@ export default function casestudiesCard({
             if (e.key === "Enter" || e.key === " ") e.preventDefault();
           }}
         >
-          <div className="relative rounded-lg border bg-background p-2 hover:bg-accent hover:text-accent-foreground transition-colors w-full h-full flex flex-col">
+          <div className="relative rounded-lg border bg-background p-2 transition-colors w-full h-full flex flex-col">
 
             {/* <Icons.externalLink
               size={35}

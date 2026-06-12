@@ -23,13 +23,13 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Render",
     description: "Deploy and host full-stack web applications, APIs, and databases instantly.",
-    rating: 4,
+    rating: 5,
     icon: Icons.render,
   },
   {
     name: "Vercel",
     description: "Deploy fast, Git-integrated frontend applications and serverless functions.",
-    rating: 4,
+    rating: 5,
     icon: Icons.vercel,
   },
   {
@@ -83,19 +83,19 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "HTML/Blade",
     description: "Structure web semantic layouts using HTML and the Laravel Blade templating engine.",
-    rating: 5,
+    rating: 4,
     icon: Icons.html5,
   },
   {
     name: "CSS",
     description: "Design custom visual styles, layouts, and animations for web viewports.",
-    rating: 4,
+    rating: 3,
     icon: Icons.css3,
   },
   {
     name: "Tailwind CSS",
     description: "Style websites rapidly utilizing a utility-first CSS design framework.",
-    rating: 4,
+    rating: 3,
     icon: Icons.tailwindcss,
   },
   //   {
