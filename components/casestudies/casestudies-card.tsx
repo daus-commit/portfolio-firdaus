@@ -53,6 +53,9 @@ export default function casestudiesCard({
                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
                   {casestudies.casestudiesSolution}
                 </p>
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
+                  {casestudies.casestudiesImpact}
+                </p>
                 <p className="text-xs sm:text-sm text-muted-foreground flex space-x-2 items-center min-w-0">
                   <Icons.gitOrgBuilding
                     size={14}
