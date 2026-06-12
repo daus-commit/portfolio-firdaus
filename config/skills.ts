@@ -98,19 +98,19 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 3,
     icon: Icons.tailwindcss,
   },
+  {
+    name: "React",
+    description:
+      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+    rating: 2,
+    icon: Icons.react,
+  },
   //   {
   //   name: "Javascript",
   //   description:
   //     "Create interactive and dynamic web experiences with the versatile scripting language.",
   //   rating: 4,
   //   icon: Icons.javascript,
-  // },
-  // {
-  //   name: "React",
-  //   description:
-  //     "Craft interactive user interfaces using components, state, props, and virtual DOM.",
-  //   rating: 5,
-  //   icon: Icons.react,
   // },
   // {
   //   name: "GraphQL",
