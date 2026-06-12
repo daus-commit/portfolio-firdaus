@@ -30,43 +30,37 @@ export default function casestudiesCard({
               size={35}
               className="absolute bottom-3 right-3 border bg-background rounded-full p-1.5 sm:p-2 cursor-pointer text-muted-foreground z-10 w-8 h-8 sm:w-10 sm:h-10"
             /> */}
-            <div className="flex min-h-[170px] flex-col justify-between rounded-md p-4 sm:p-6 pb-12 sm:pb-6 flex-grow">
+            <div className="flex min-h-[170px] flex-col justify-between rounded-md p-4 sm:p-6 flex-grow">
+            <div>
+              {/* Title */}
               <div className="flex flex-row justify-between items-start gap-2 mb-4 min-w-0">
                 <h3 className="font-bold flex space-x-2 items-center min-w-0 flex-1">
-                  {/* <Icons.gitRepoIcon
-                    size={18}
-                    className="flex-shrink-0 sm:w-5 sm:h-5"
-                  /> */}
                   <span className="text-2xl font-bold tracking-tight text-foreground">
                     {casestudies.repo}
                   </span>
                 </h3>
-                {/* <Icons.gitBranch
-                  size={18}
-                  className="flex-shrink-0 sm:w-5 sm:h-5"
-                /> */}
               </div>
+
+              {/* Description, Solution, Impact */}
               <div className="space-y-3 sm:space-y-4 min-w-0">
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-10 break-words">
                   {casestudies.casestudiesDescription}
                 </p>
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-10 break-words">
                   {casestudies.casestudiesSolution}
                 </p>
-                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-30 break-words">
+                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-10 break-words">
                   {casestudies.casestudiesImpact}
-                </p>
-                <p className="text-xs sm:text-sm text-muted-foreground flex space-x-2 items-center min-w-0">
-                  <Icons.gitOrgBuilding
-                    size={14}
-                    className="flex-shrink-0 sm:w-4 sm:h-4"
-                  />
-                  <span className="truncate min-w-0">
-                    {casestudies.repoOwner}
-                  </span>
                 </p>
               </div>
             </div>
+
+            {/* Owner — always at bottom */}
+            <p className="text-xs sm:text-sm text-muted-foreground flex space-x-2 items-center min-w-0 mt-4 pt-4 border-t">
+              <Icons.gitOrgBuilding size={14} className="flex-shrink-0 sm:w-4 sm:h-4" />
+              <span className="truncate min-w-0">{casestudies.repoOwner}</span>
+            </p>
+          </div>
           </div>
         </div>
       ))}
