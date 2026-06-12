@@ -54,11 +54,11 @@ export const Projects: ProjectInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "I contract-developed an immersive virtual reality educational simulation tailored to fulfill a client's specific training requirements for the Islamic Korban ritual.",
+        "I developed an immersive virtual reality educational simulation as my Final Year Project (FYP), tailored specifically to fulfill a client's training requirements for the Islamic Korban ritual.",
         "The project focused on executing the client's instructional goals by designing optimized 3D scenes in Blender and building interactive educational mechanisms inside Unity for direct deployment on the Meta Quest 3."
       ],
       bullets: [
-        "Collaborated with the client throughout the development phase to translate exact ritual guidelines into functional VR workflows.",
+        "Collaborated closely with the client during the development phase to translate exact ritual guidelines into functional VR workflows.",
         "Modeled and textured custom, performance-optimized 3D assets in Blender according to client-approved design specifications.",
         "Engineered smooth interactive mechanics and player controls in Unity Engine to match client requirements for an intuitive user experience.",
         "Deployed and tested iterations via the Meta Horizon Developer Center to ensure stable standalone headset performance.",
