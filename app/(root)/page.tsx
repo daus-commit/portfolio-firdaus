@@ -137,9 +137,7 @@ export default function IndexPage() {
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Motivated Junior FullStack Developer skilled in web application development,
-              UI/UX implementation, API integration, and responsive design using
-              modern development frameworks.
+              Junior Fullstack Developer focused on scalable web applications, backend architecture, and modern development workflows.
             </p>
           </div>
 
