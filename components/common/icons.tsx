@@ -78,6 +78,7 @@ import {
   SiFlutter,
   SiInstagram,
   SiVercel,
+  SiSupabase,
 } from "react-icons/si";
 
 export const Icons = {
@@ -151,6 +152,7 @@ export const Icons = {
   instagram: (SiInstagram ?? (() => null)) as any,
   vercel: SiVercel,
   microsoft: IoLogoMicrosoft,
+  supabase: SiSupabase,
 
 
   // Custom high-fidelity inline SVG component for OpenRouter

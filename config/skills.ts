@@ -105,6 +105,12 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 2,
     icon: Icons.react,
   },
+  {
+    name: "Supabase",
+    description: "Deploy open-source PostgreSQL databases, authentication, and real-time APIs instantly.",
+    rating: 3,
+    icon: Icons.supabase,
+  },
   //   {
   //   name: "Javascript",
   //   description:
