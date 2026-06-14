@@ -21,7 +21,7 @@ export function MobileNav({ items, children }: MobileNavProps) {
     >
       <div className="relative z-20 grid gap-6 rounded-md bg-popover p-4 text-popover-foreground shadow-md">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl [font-family:var(--font-author)]">
+          <span className="text-2xl font-bold [font-family:Helvetica,Arial,sans-serif]">
             {siteConfig.authorName}
           </span>
         </Link>

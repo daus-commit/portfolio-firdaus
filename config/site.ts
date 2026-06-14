@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Firdaus Hakimi - Junior FullStack Developer with Fullstack Experience",
-  authorName: "Firdaus Hakimi",
+  authorName: "Firdaus Hakimi.",
   username: "firdaushakimi",
   description:
     "Firdaus Hakimi - Junior FullStack Developer with Fullstack Experience",

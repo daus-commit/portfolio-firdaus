@@ -47,7 +47,7 @@ export function MainNav({ items, children }: MainNavProps) {
         transition={{ duration: 0.5 }}
       >
         <Link href="/" className="hidden items-center space-x-2 md:flex">
-          <span className="text-2xl [font-family:var(--font-author)]">
+          <span className="text-2xl font-bold [font-family:Helvetica,Arial,sans-serif]">
             {siteConfig.authorName}
           </span>
         </Link>

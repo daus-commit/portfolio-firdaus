@@ -311,7 +311,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 href={siteConfig.links.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-foreground hover:text-primary transition-colors"
+                className="text-foreground hover:text-primary transition-colors font-bold [font-family:Helvetica,Arial,sans-serif]"
               >
                 {siteConfig.authorName}
               </Link>
