@@ -2,30 +2,18 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 
 import BlogCard from "@/components/blogs/blog-card";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
-import React from "react";
-
-import CasestudiesCardClient from "./casestudies-card-client";
-
-// NOTE: `pagesConfig` doesn't include `casestudies` yet, so we hardcode the section text
-// and use `casestudiesUnsorted` directly below.
-
-import { casestudiesUnsorted } from "@/config/casestudies";
-
 import ContributionCard from "@/components/contributions/contribution-card";
-import casestudiesCard from "@/components/casestudies/casestudies-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
 import SkillsCard from "@/components/skills/skills-card";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { featuredContributions } from "@/config/contributions";
-import { featuredcasestudies } from "@/config/casestudies";
 import { experiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
 import { featuredProjects } from "@/config/projects";
@@ -35,12 +23,11 @@ import { getFeaturedBlogs } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/myself.jpeg";
 
-const LiquidEther = dynamic(() => import("@/components/ui/LiquidEther"));
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Firdaus Hakimi - Junior FullStack Developer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Firdaus Hakimi - Junior Programmer  working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -48,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function IndexPage() {
   const featuredBlogs = getFeaturedBlogs();
-
+  // Structured data for personal portfolio
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -59,10 +46,11 @@ export default function IndexPage() {
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
+  // Structured data for website as a software application (template)
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
+    name: "Next.js Portfolio",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Web",
     offers: {
@@ -90,35 +78,15 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      {/* ───────────────────────── HERO SECTION ───────────────────────── */}
-      <section className="relative space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center overflow-hidden">
-
-        {/* LiquidEther animated background */}
-        <div className="absolute inset-0 z-0">
-          <LiquidEther
-            colors={['#5227FF', '#FF9FFC', '#B497CF']}
-            mouseForce={20}
-            cursorSize={100}
-            resolution={0.5}
-            autoDemo={true}
-            autoSpeed={0.5}
-            autoIntensity={2.2}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-            isBounce={false}
-            isViscous={false}
-          />
-        </div>
-
-        {/* Hero content — sits above the canvas */}
-        <div className="container relative z-10 flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20"><br></br>
           <Image
             src={profileImg}
             height={100}
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Firdaus Hakimi - Junior FullStack Developer Portfolio"
+            alt="Firdaus Hakimi - Junior Programmer Portfolio"
             priority
           />
           <AnimatedText
@@ -133,11 +101,11 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Junior FullStack Developer
+            Junior Programmer 
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Junior Fullstack Developer focused on scalable web applications, backend architecture, and modern development workflows.
+              Motivated Junior Programmer skilled in web application development, UI/UX implementation, API integration, and responsive design using modern development frameworks.
             </p>
           </div>
 
@@ -173,8 +141,6 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
       </section>
-
-      {/* ───────────────────────── PROJECTS ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
@@ -217,40 +183,6 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-
-      {/* ───────────────────────── CASE STUDIES ───────────────────────── */}
-      <AnimatedSection
-        direction="up"
-        className="container space-y-6 bg-muted py-10 my-14"
-        id="casestudies"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.casestudies.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.casestudies.description}
-          </AnimatedText>
-        </div>
-        <CasestudiesCardClient casestudies={featuredcasestudies} />
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/casestudies">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
-
-
-      {/* ───────────────────────── EXPERIENCE ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
@@ -290,8 +222,6 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-
-      {/* ───────────────────────── CONTRIBUTIONS ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
@@ -321,8 +251,6 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-
-      {/* ───────────────────────── SKILLS ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
