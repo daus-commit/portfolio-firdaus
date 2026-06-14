@@ -21,8 +21,8 @@ export const experiences: ExperienceInterface[] = [
     position: "Internship, Junior Backend Developer",
     company: "HPCS Sdn Bhd",
     location: "Alam Budiman, Selangor, Malaysia",
-    startDate: new Date("5 Jan 2026"),
-    endDate: "Present",
+    startDate: new Date("2026-01-05"),
+    endDate: new Date("2026-05-22"),
     description: [
       "Developed and maintained robust enterprise web applications utilizing Laravel and the Yii2 Advanced framework.",
       "Architected secure application workflows by implementing custom Authentication, Role-Based Access Control (RBAC), and custom Middleware layers.",
@@ -46,8 +46,8 @@ export const experiences: ExperienceInterface[] = [
     position: "Internship, UI/UX Designer and Joomla CMS Developer",
     company: "HPCS | Beambox Malaysia",
     location: "Alam Budiman, Selangor, Malaysia",
-    startDate: new Date("5 Jan 2026"),
-    endDate: "Present",
+    startDate: new Date("2026-01-05"),
+    endDate: new Date("2026-05-22"),
     description: [
       "Designed intuitive, user-centric wireframes, user flows, and high-fidelity interactive prototypes to elevate application interfaces.",
       "Developed, customized, and maintained responsive corporate web portals utilizing the Joomla Content Management System (CMS).",
@@ -70,8 +70,8 @@ export const experiences: ExperienceInterface[] = [
     position: "Internship, IT Technician",
     company: "HPCS Sdn Bhd",
     location: "Alam Budiman, Selangor, Malaysia",
-    startDate: new Date("5 Jan 2026"),
-    endDate: "Present",
+    startDate: new Date("2026-01-05"),
+    endDate: new Date("2026-05-22"),
     description: [
       "Conducted rigorous QA testing and system diagnostics across company applications to identify infrastructure bugs and performance bottlenecks.",
       "Collaborated closely with development teams to log, track, and verify software errors and system hardware vulnerabilities.",

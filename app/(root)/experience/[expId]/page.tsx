@@ -20,8 +20,12 @@ interface ExperienceDetailPageProps {
 }
 
 // Helper function to extract year from date
-const getYearFromDate = (date: Date): string => {
-  return new Date(date).getFullYear().toString();
+const getMonthYearFromDate = (date: Date): string => {
+  // Using built-in locale formatting for consistent month abbreviation
+  return new Date(date).toLocaleDateString(undefined, {
+    month: "short",
+    year: "numeric",
+  });
 };
 
 // Helper function to get duration text
@@ -29,10 +33,11 @@ const getDurationText = (
   startDate: Date,
   endDate: Date | "Present"
 ): string => {
-  const startYear = getYearFromDate(startDate);
-  const endYear =
-    typeof endDate === "string" ? "Present" : getYearFromDate(endDate);
-  return `${startYear} - ${endYear}`;
+  const startText = getMonthYearFromDate(startDate);
+  const endText =
+    typeof endDate === "string" ? "Present" : getMonthYearFromDate(endDate);
+
+  return `${startText} - ${endText}`;
 };
 
 export async function generateMetadata({
