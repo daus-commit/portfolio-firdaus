@@ -27,7 +27,7 @@ import profileImg from "@/public/myself.jpeg";
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Firdaus Hakimi - Junior Programmer  working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Firdaus Hakimi - Junior FullStack Developer  working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -86,7 +86,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Firdaus Hakimi - Junior Programmer Portfolio"
+            alt="Firdaus Hakimi - Junior FullStack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -101,11 +101,11 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Junior Programmer 
+            Junior FullStack Developer 
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Motivated Junior Programmer skilled in web application development, UI/UX implementation, API integration, and responsive design using modern development frameworks.
+              Fullstack Developer focused on scalable web applications, backend architecture, and modern development workflows.
             </p>
           </div>
 
