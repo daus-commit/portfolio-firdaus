@@ -245,7 +245,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <a
                   rel="author"
                   href={siteConfig.url}
-                  className="hover:text-foreground transition-colors"
+                  className="hover:text-foreground transition-colors [font-family:var(--font-author)]"
                 >
                   {siteConfig.authorName}
                 </a>

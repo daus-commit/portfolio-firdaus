@@ -35,7 +35,7 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Microsoft Office",
     description: "Create professional documentation, technical user manuals, and spreadsheets.",
-    rating: 5,
+    rating: 4,
     icon: Icons.microsoft,
   },
   {
@@ -71,7 +71,7 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Bootstrap",
     description: "Quickly construct responsive web layouts using a popular component framework.",
-    rating: 4,
+    rating: 3,
     icon: Icons.bootstrap,
   },
   {
@@ -122,7 +122,7 @@ export const skillsUnsorted: skillsInterface[] = [
     description: "Create professional marketing graphics, presentations, and visual content quickly.",
     rating: 5,
     icon: Icons.canva,
-  },
+  }, 
   //   {
   //   name: "Javascript",
   //   description:

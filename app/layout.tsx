@@ -1,7 +1,8 @@
 import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Poppins } from "next/font/google";
+
 import localFont from "next/font/local";
 import Script from "next/script";
 
@@ -16,6 +17,13 @@ const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
+
+const fontAuthor = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-author",
+});
+
 
 // Font files can be colocated inside of `pages`
 const fontHeading = localFont({
@@ -109,7 +117,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
-          fontHeading.variable
+          fontHeading.variable,
+          fontAuthor.variable
+
         )}
       >
         <ThemeProvider
