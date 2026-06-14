@@ -111,6 +111,18 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 3,
     icon: Icons.supabase,
   },
+  {
+    name: "Figma",
+    description: "Design interactive user interfaces, wireframes, and prototypes collaboratively in real time.",
+    rating: 4,
+    icon: Icons.figma,
+  },
+  {
+    name: "Canva",
+    description: "Create professional marketing graphics, presentations, and visual content quickly.",
+    rating: 5,
+    icon: Icons.canva,
+  },
   //   {
   //   name: "Javascript",
   //   description:
