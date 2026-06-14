@@ -38,7 +38,7 @@ export const casestudiesUnsorted: casestudiesInterface[] = [
   {
     repo: "SEO Performance Project",
     casestudiesDescription: "Problem: Low organic search visibility and poor crawlability caused by missing meta tags, unstructured content, and slow page speeds.",
-    casestudiesSolution: "Solution: Implemented structured data (JSON-LD), optimized meta tags, and improved Core Web Vitals through asset minification and lazy loading.",
+    casestudiesSolution: "Solution: Implemented structured data, optimized meta tags, and improved Core Web Vitals through asset minification and lazy loading.",
     casestudiesImpact: "Impact: Increased organic traffic by 60%, achieved higher Google Search rankings, and improved Lighthouse SEO scores from 65 to 98.",
     repoOwner: "Firdaus Hakimi",
   },
