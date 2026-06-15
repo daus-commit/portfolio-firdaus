@@ -42,30 +42,6 @@ export const casestudiesUnsorted: casestudiesInterface[] = [
     casestudiesImpact: "Impact: Increased organic traffic by 60%, achieved higher Google Search rankings, and improved Lighthouse SEO scores from 65 to 98.",
     repoOwner: "Firdaus Hakimi",
   },
-  // {
-  //   repo: "template-yii2Advance",
-  //   casestudiesDescription:
-  //     "Yii2 Advanced admin template featuring AdminLTE dashboard and mdmsoft RBAC permissions.",
-  //   casestudiesSolution:
-  //     "Problem: Lagging when entered into the VR Environment because the fully render items.",
-  //   repoOwner: "daus-commit",
-  // },
-  // {
-  //   repo: "template-yii2Advance",
-  //   casestudiesDescription:
-  //     "Yii2 Advanced admin template featuring AdminLTE dashboard and mdmsoft RBAC permissions.",
-  //   casestudiesSolution:
-  //     "Problem: Lagging when entered into the VR Environment because the fully render items.",
-  //   repoOwner: "daus-commit",
-  // },
-  // {
-  //   repo: "template-yii2Advance",
-  //   casestudiesDescription:
-  //     "Yii2 Advanced admin template featuring AdminLTE dashboard and mdmsoft RBAC permissions.",
-  //   casestudiesSolution:
-  //     "Problem: Lagging when entered into the VR Environment because the fully render items.",
-  //   repoOwner: "daus-commit",
-  // },
 ];
 
 export const featuredcasestudies: casestudiesInterface[] =
