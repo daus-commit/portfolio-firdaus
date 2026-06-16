@@ -11,13 +11,13 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Laravel",
     description: "Build secure, scalable PHP web applications using an elegant MVC framework.",
-    rating: 5,
+    rating: 4,
     icon: Icons.laravel,
   },
   {
     name: "Yii2 Advanced",
     description: "Develop enterprise-grade PHP backends with tier-separated application structures.",
-    rating: 5,
+    rating: 4,
     icon: Icons.yii,
   },
   {
@@ -122,7 +122,7 @@ export const skillsUnsorted: skillsInterface[] = [
     description: "Create professional marketing graphics, presentations, and visual content quickly.",
     rating: 5,
     icon: Icons.canva,
-  }, 
+  },
   //   {
   //   name: "Javascript",
   //   description:
