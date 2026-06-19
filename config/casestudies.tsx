@@ -47,3 +47,16 @@ export const casestudiesUnsorted: casestudiesInterface[] = [
 export const featuredcasestudies: casestudiesInterface[] =
   casestudiesUnsorted.slice(0, 3);
 
+
+
+
+
+
+
+
+
+
+
+
+
+  

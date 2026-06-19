@@ -192,7 +192,7 @@ export default function IndexPage() {
        {/* ───────────────────────── CASE STUDIES ───────────────────────── */}
       <AnimatedSection
         direction="up"
-        className="container space-y-6 bg-muted py-10 my-14"
+        className="container space-y-6 py-10 my-14"
         id="casestudies"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -223,7 +223,7 @@ export default function IndexPage() {
       {/* ───────────────────────── EXPERIENCE ───────────────────────── */}
       <AnimatedSection
         direction="up"
-        className="container space-y-6 py-10 my-14"
+        className="container space-y-6 bg-muted py-10 my-14"
         id="experience"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -264,7 +264,7 @@ export default function IndexPage() {
       {/* ───────────────────────── CONTRIBUTION ───────────────────────── */}
       <AnimatedSection
         direction="up"
-        className="container space-y-6 bg-muted py-10 my-14"
+        className="container space-y-6 py-10 my-14"
         id="contributions"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
@@ -295,7 +295,7 @@ export default function IndexPage() {
       {/* ───────────────────────── SKILLS ───────────────────────── */}
       <AnimatedSection
         direction="up"
-        className="container space-y-6 py-10 my-14"
+        className="container space-y-6 bg-muted py-10 my-14"
         id="skills"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
