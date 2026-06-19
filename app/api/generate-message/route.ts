@@ -9,6 +9,7 @@ const client = new OpenAI({
 // susun ikut priority — letak yang paling reliable dulu
 const MODELS = [
   "anthropic/claude-haiku-4-5",
+  "openrouter/fusion",
   "qwen/qwen3-8b:free",
   "meta-llama/llama-3.1-8b-instruct:free",
   "mistralai/mistral-7b-instruct:free",
@@ -34,6 +35,7 @@ async function tryGenerate(model: string, subject: string, name: string) {
           ${name ? `The person contacting is: ${name}` : ""}
 
           Write a message FROM the visitor TO the developer. Rules:
+          - Remove the opening greeting like "This is a straightforward creative writing task with no factual accuracy requirements, so I'll write it directly."
           - Casual and friendly tone, like texting a colleague
           - Written in first person (the visitor speaking)
           - Directly address the subject — if it's about hiring, say they want to hire the developer
