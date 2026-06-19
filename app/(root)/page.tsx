@@ -22,6 +22,9 @@ import { featuredSkills } from "@/config/skills";
 import { getFeaturedBlogs } from "@/lib/blogs";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/myself.jpeg";
+import { casestudiesUnsorted } from "@/config/casestudies";
+import { featuredcasestudies } from "@/config/casestudies";
+import CasestudiesCardClient from "./casestudies-card-client";
 
 
 export const metadata: Metadata = {
@@ -141,6 +144,8 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
       </section>
+
+      {/* ───────────────────────── PROJECT ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
@@ -183,6 +188,39 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
+       {/* ───────────────────────── CASE STUDIES ───────────────────────── */}
+      <AnimatedSection
+        direction="up"
+        className="container space-y-6 bg-muted py-10 my-14"
+        id="casestudies"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.casestudies.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.casestudies.description}
+          </AnimatedText>
+        </div>
+        <CasestudiesCardClient casestudies={featuredcasestudies} />
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/casestudies">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+      </AnimatedSection>
+
+      {/* ───────────────────────── EXPERIENCE ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
@@ -222,6 +260,8 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
+      {/* ───────────────────────── CONTRIBUTION ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 bg-muted py-10 my-14"
@@ -251,6 +291,8 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+
+      {/* ───────────────────────── SKILLS ───────────────────────── */}
       <AnimatedSection
         direction="up"
         className="container space-y-6 py-10 my-14"
