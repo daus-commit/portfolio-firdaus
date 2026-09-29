@@ -21,10 +21,10 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.yii,
   },
   {
-    name: "Render",
-    description: "Deploy and host full-stack web applications, APIs, and databases instantly.",
+    name: "Github",
+    description: "Manage codebase version control, collaborate on repositories, and track changes.",
     rating: 5,
-    icon: Icons.render,
+    icon: Icons.github,
   },
   {
     name: "Vercel",
@@ -33,16 +33,16 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.vercel,
   },
   {
+    name: "Render",
+    description: "Deploy and host full-stack web applications, APIs, and databases instantly.",
+    rating: 5,
+    icon: Icons.render,
+  },
+  {
     name: "Microsoft Office",
     description: "Create professional documentation, technical user manuals, and spreadsheets.",
     rating: 4,
     icon: Icons.microsoft,
-  },
-  {
-    name: "Github",
-    description: "Manage codebase version control, collaborate on repositories, and track changes.",
-    rating: 5,
-    icon: Icons.github,
   },
   {
     name: "OpenRouter.ai",

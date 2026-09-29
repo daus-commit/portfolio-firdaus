@@ -321,6 +321,31 @@ export default function IndexPage() {
             </Button>
           </Link>
         </AnimatedText>
+        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+        <AnimatedText delay={0.6} className="w-full sm:w-auto">
+          <Link
+            href="/resume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
+            aria-label="View resume (opens in a new tab)"
+          >
+            <Icons.post className="mr-2 h-4 w-4" /> Resume
+          </Link>
+        </AnimatedText>
+        <AnimatedText delay={0.8} className="w-full sm:w-auto">
+          <Link
+            href="/contact"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "w-full sm:w-auto"
+            )}
+            aria-label="Contact Firdaus Hakimi"
+          >
+            <Icons.contact className="mr-2 h-4 w-4" /> Contact
+          </Link>
+        </AnimatedText>
+      </div>
       </AnimatedSection>
     </ClientPageWrapper>
   );
