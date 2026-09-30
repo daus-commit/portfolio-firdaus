@@ -323,25 +323,25 @@ export default function IndexPage() {
         </AnimatedText>
       </AnimatedSection>
 
+    {/* ───────────────────────── RESUME & CONTACT ───────────────────────── */}
     <AnimatedSection
         direction="up"
         // className="container space-y-6 py-10 my-14"
         id="contributions"
       >
-      <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-        <AnimatedText delay={0.6} className="w-full sm:w-auto">
-          <Link
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto")}
-            aria-label="View resume (opens in a new tab)"
-          >
-            <Icons.post className="mr-2 h-4 w-4" /> Resume
-          </Link>
-        </AnimatedText>
-        <AnimatedText delay={0.6} className="w-full sm:w-auto">
-          <Link
+      <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
+            <AnimatedText delay={0.6}>
+              <Link
+                href={"/resume"}
+                target="_blank"
+                className={cn(buttonVariants({ size: "lg" }))}
+                aria-label="View resume"
+              >
+                <Icons.post className="w-4 h-4 mr-2" /> Resume
+              </Link>
+            </AnimatedText>
+            <AnimatedText delay={0.8}>
+              <Link
                 href={"/contact"}
                 rel="noreferrer"
                 className={cn(
@@ -354,8 +354,8 @@ export default function IndexPage() {
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
-        </AnimatedText>
-      </div>
+            </AnimatedText>
+          </div>
       </AnimatedSection>
     </ClientPageWrapper>
   );
