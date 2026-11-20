@@ -54,6 +54,41 @@ export const experiences: ExperienceInterface[] = [
   // //second experience
   {
     id: "2",
+    position: "Freelance Full-Stack Developer",
+    company: "Barokah Bersatu Enterprise (Client Project)",
+    location: "Shah Alam, Selangor, Malaysia",
+    startDate: new Date("2026-05-01"),
+    endDate: "Present",
+    description: [
+      "Developed and deployed a high-performance corporate landing website using Next.js and Tailwind CSS, ensuring fast loading speeds and seamless cross-device responsiveness.",
+      "Integrated OpenRouter.ai API for real-time automated text generation on frontend forms and configured EmailJS for client inquiry messaging without a dedicated mail server.",
+      "Executed technical SEO optimizations and Google Search Console indexing, improving Lighthouse SEO scores from 65 to 98 and achieving priority search ranking.",
+    ],
+    achievements: [
+      "Built and deployed a responsive corporate web platform using Next.js and Tailwind CSS with automated CI/CD deployment pipelines via GitHub and Vercel.",
+      "Integrated OpenRouter.ai API to power intelligent text generation helpers directly within user input forms.",
+      "Configured EmailJS client-side mail routing to deliver instant form notifications and customer inquiries without dedicated backend mail servers.",
+      "Resolved crawlability and page speed bottlenecks through structured data, meta tag optimization, asset minification and lazy loading, raising Lighthouse SEO scores from 65 to 98.",
+      "Registered and verified the domain on Google Search Console, achieving priority Google Search index placement for client brand queries.",
+    ],
+    skills: [
+      "Next.js",
+      "Tailwind CSS",
+      "OpenRouter.ai API",
+      "EmailJS",
+      "CI/CD Pipelines",
+      "Vercel",
+      "Technical SEO",
+      "Core Web Vitals",
+      "Google Search Console",
+    ],
+    companyUrl: "https://barokah-bersatu-enterprise.vercel.app",
+    logo: "/experience/barokah.png",
+  },
+
+  // //third experience
+  {
+    id: "3",
     position: "Internship, Junior Backend Developer and IT Technician",
     company: "HPCS Sdn Bhd",
     location: "Alam Budiman, Selangor, Malaysia",
@@ -90,9 +125,9 @@ export const experiences: ExperienceInterface[] = [
     logo: "/experience/hpcs.png",
   },
 
-  // //third experience
+  // //fourth experience
   {
-    id: "3",
+    id: "4",
     position: "Internship, UI/UX Designer and Joomla CMS Developer",
     company: "HPCS | Beambox Malaysia",
     location: "Alam Budiman, Selangor, Malaysia",
@@ -121,40 +156,5 @@ export const experiences: ExperienceInterface[] = [
     ],
     companyUrl: "https://beambox.my",
     logo: "/experience/beamboxlogo.png",
-  },
-
-  // //fourth experience
-  {
-    id: "4",
-    position: "Freelance Full-Stack Developer",
-    company: "Barokah Bersatu Enterprise (Client Project)",
-    location: "Shah Alam, Selangor, Malaysia",
-    startDate: new Date("2026-05-01"),
-    endDate: new Date("2026-05-31"),
-    description: [
-      "Developed and deployed a high-performance corporate landing website using Next.js and Tailwind CSS, ensuring fast loading speeds and seamless cross-device responsiveness.",
-      "Integrated OpenRouter.ai API for real-time automated text generation on frontend forms and configured EmailJS for client inquiry messaging without a dedicated mail server.",
-      "Executed technical SEO optimizations and Google Search Console indexing, improving Lighthouse SEO scores from 65 to 98 and achieving priority search ranking.",
-    ],
-    achievements: [
-      "Built and deployed a responsive corporate web platform using Next.js and Tailwind CSS with automated CI/CD deployment pipelines via GitHub and Vercel.",
-      "Integrated OpenRouter.ai API to power intelligent text generation helpers directly within user input forms.",
-      "Configured EmailJS client-side mail routing to deliver instant form notifications and customer inquiries without dedicated backend mail servers.",
-      "Resolved crawlability and page speed bottlenecks through structured data, meta tag optimization, asset minification and lazy loading, raising Lighthouse SEO scores from 65 to 98.",
-      "Registered and verified the domain on Google Search Console, achieving priority Google Search index placement for client brand queries.",
-    ],
-    skills: [
-      "Next.js",
-      "Tailwind CSS",
-      "OpenRouter.ai API",
-      "EmailJS",
-      "CI/CD Pipelines",
-      "Vercel",
-      "Technical SEO",
-      "Core Web Vitals",
-      "Google Search Console",
-    ],
-    companyUrl: "https://barokah-bersatu-enterprise.vercel.app",
-    logo: "/experience/barokah.png",
   },
 ];
