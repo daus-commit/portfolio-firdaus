@@ -105,7 +105,23 @@ export type ValidSkills =
   | "Blender"
   | "Meta Quest 3"
   | "Meta Horizon Developer Center"
-  | "NextJS";
+  | "NextJS"
+  | "Full-Stack Development"
+  | "AWS EC2 Monitoring"
+  | "System & Data Analysis"
+  | "QA/QC Testing"
+  | "Debugging"
+  | "Client Training"
+  | "Filament"
+  | "RBAC & Middleware"
+  | "QA/QC & UAT"
+  | "GitLab & GitHub"
+  | "Render & Vercel"
+  | "CI/CD Pipelines"
+  | "Vercel"
+  | "Technical SEO"
+  | "Core Web Vitals"
+  | "Google Search Console";
 
 export type ValidCategory =
   | "Full Stack"
