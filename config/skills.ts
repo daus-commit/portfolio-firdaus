@@ -9,6 +9,13 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
   {
+    name: "VS Code",
+    description:
+      "Primary code editor for development, debugging and Git workflow.",
+    rating: 5,
+    icon: Icons.vscode,
+  },
+  {
     name: "Laravel",
     description: "Build secure, scalable PHP web applications using an elegant MVC framework.",
     rating: 4,
@@ -129,13 +136,6 @@ export const skillsUnsorted: skillsInterface[] = [
       "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
     rating: 2,
     icon: Icons.amazonaws,
-  },
-  {
-    name: "VS Code",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 5,
-    icon: Icons.vscode,
   },
   //   {
   //   name: "Javascript",
