@@ -79,7 +79,7 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Next.js",
     description: "Build high-performance, SEO-optimized React applications with server rendering.",
-    rating: 2,
+    rating: 3,
     icon: Icons.nextjs,
   },
   {
@@ -109,7 +109,7 @@ export const skillsUnsorted: skillsInterface[] = [
   {
     name: "Tailwind CSS",
     description: "Style websites rapidly utilizing a utility-first CSS design framework.",
-    rating: 3,
+    rating: 2,
     icon: Icons.tailwindcss,
   },
   {
