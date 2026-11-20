@@ -64,6 +64,13 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.unity,
   },
   {
+    name: "AWS",
+    description:
+      "Monitored AWS EC2 server uptime and performed server reboots during downtime incidents.",
+    rating: 2,
+    icon: Icons.amazonaws,
+  },
+  {
     name: "Flutter",
     description: "Build natively compiled cross-platform mobile and web apps from one codebase.",
     rating: 2,
@@ -129,13 +136,6 @@ export const skillsUnsorted: skillsInterface[] = [
     description: "Create professional marketing graphics, presentations, and visual content quickly.",
     rating: 5,
     icon: Icons.canva,
-  },
-  {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 2,
-    icon: Icons.amazonaws,
   },
   //   {
   //   name: "Javascript",
