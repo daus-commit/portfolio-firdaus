@@ -123,6 +123,20 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 5,
     icon: Icons.canva,
   },
+  {
+    name: "AWS",
+    description:
+      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+    rating: 2,
+    icon: Icons.amazonaws,
+  },
+  {
+    name: "VS Code",
+    description:
+      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+    rating: 5,
+    icon: Icons.vscode,
+  },
   //   {
   //   name: "Javascript",
   //   description:
@@ -206,13 +220,6 @@ export const skillsUnsorted: skillsInterface[] = [
   //     "Create stunning and responsive UIs with a popular React UI framework.",
   //   rating: 4,
   //   icon: Icons.mui,
-  // },
-  // {
-  //   name: "AWS",
-  //   description:
-  //     "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-  //   rating: 3,
-  //   icon: Icons.amazonaws,
   // },
   // {
   //   name: "Netlify",

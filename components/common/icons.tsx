@@ -82,6 +82,7 @@ import {
   SiFigma,
   SiCanva,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export const Icons = {
   contact: Phone,
@@ -157,7 +158,7 @@ export const Icons = {
   supabase: SiSupabase,
   figma: SiFigma,
   canva: SiCanva,
-
+  vscode: VscVscode,
 
   // Custom high-fidelity inline SVG component for OpenRouter
   // Custom left-aligned inline SVG component for OpenRouter
