@@ -60,7 +60,7 @@ export const experiences: ExperienceInterface[] = [
     startDate: new Date("2026-05-01"),
     endDate: "Present",
     description: [
-      "Developed and deployed a high-performance corporate landing website using Next.js and Tailwind CSS, ensuring fast loading speeds and seamless cross-device responsiveness.",
+      "Architectured, developed, deployed and maintained a high-performance corporate landing website using Next.js and Tailwind CSS, ensuring fast loading speeds and seamless cross-device responsiveness.",
       "Integrated OpenRouter.ai API for real-time automated text generation on frontend forms and configured EmailJS for client inquiry messaging without a dedicated mail server.",
       "Executed technical SEO optimizations and Google Search Console indexing, improving Lighthouse SEO scores from 65 to 98 and achieving priority search ranking.",
     ],
