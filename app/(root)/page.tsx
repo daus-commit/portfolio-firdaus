@@ -8,6 +8,7 @@ import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
 import { Icons } from "@/components/common/icons";
+import { ScrollTimeline } from "@/components/common/scroll-timeline";
 import ContributionCard from "@/components/contributions/contribution-card";
 import ExperienceCard from "@/components/experience/experience-card";
 import ProjectCard from "@/components/projects/project-card";
@@ -68,7 +69,18 @@ export default function IndexPage() {
     },
   };
 
+  const timelineSections = [
+    { id: "home", label: pagesConfig.home.title },
+    { id: "projects", label: pagesConfig.projects.title },
+    { id: "casestudies", label: pagesConfig.casestudies.title },
+    { id: "experience", label: pagesConfig.experience.title },
+    { id: "contributions", label: pagesConfig.contributions.title },
+    { id: "skills", label: pagesConfig.skills.title },
+    { id: "contact", label: pagesConfig.contact.title },
+  ];
+
   return (
+    <>
     <ClientPageWrapper>
       <Script
         id="schema-person"
@@ -81,7 +93,7 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+      <section id="home" className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20"><br></br>
           <Image
             src={profileImg}
@@ -327,7 +339,7 @@ export default function IndexPage() {
     <AnimatedSection
         direction="up"
         // className="container space-y-6 py-10 my-14"
-        id="contributions"
+        id="contact"
       >
       <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
@@ -358,5 +370,8 @@ export default function IndexPage() {
           </div>
       </AnimatedSection>
     </ClientPageWrapper>
+    {/* Outside ClientPageWrapper: its transform would break position: fixed */}
+    <ScrollTimeline sections={timelineSections} />
+    </>
   );
 }
