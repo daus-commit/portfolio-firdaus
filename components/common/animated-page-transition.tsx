@@ -39,6 +39,7 @@ export const AnimatedPageTransition = ({
       animate="animate"
       exit="exit"
       variants={pageVariants}
+      data-animate
       className="w-full"
     >
       {children}

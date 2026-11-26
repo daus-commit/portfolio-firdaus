@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { AnimationProvider } from "@/providers/animation-provider";
 import { ModalProvider } from "@/providers/modal-provider";
 
 const fontSans = FontSans({
@@ -112,7 +113,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        {/* Without JS, framer-motion never reveals content rendered at opacity 0. */}
+        <noscript>
+          <style>{`[data-animate]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -136,7 +142,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             "synthwave",
           ]}
         >
-          {children}
+          <AnimationProvider>{children}</AnimationProvider>
           <Analytics />
           <Toaster />
           <ModalProvider />

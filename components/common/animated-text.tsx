@@ -11,12 +11,11 @@ interface AnimatedTextProps {
 }
 
 const textVariants = {
+  // No opacity fade: text must be visible at first paint (LCP, no-JS).
   hidden: {
-    opacity: 0,
     y: 20,
   },
   visible: (delay: number) => ({
-    opacity: 1,
     y: 0,
     transition: {
       delay,
@@ -40,6 +39,7 @@ export const AnimatedText = ({
       animate="visible"
       custom={delay}
       variants={textVariants}
+      data-animate
       className={className}
     >
       {children}

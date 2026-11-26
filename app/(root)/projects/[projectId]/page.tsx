@@ -51,15 +51,25 @@ export default async function Project({ params }: ProjectPageProps) {
           <div className="flex items-center">
             {project.githubLink && (
               <CustomTooltip text="Link to the source code.">
-                <Link href={project.githubLink} target="_blank">
-                  <Icons.gitHub className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
+                <Link
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${project.companyName} source code on GitHub (opens in new tab)`}
+                >
+                  <Icons.gitHub aria-hidden="true" className="w-6 ml-4 text-muted-foreground hover:text-foreground" />
                 </Link>
               </CustomTooltip>
             )}
             {project.websiteLink && (
               <CustomTooltip text="Please note that some project links may be temporarily unavailable.">
-                <Link href={project.websiteLink} target="_blank">
-                  <Icons.externalLink className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
+                <Link
+                  href={project.websiteLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${project.companyName} live website (opens in new tab)`}
+                >
+                  <Icons.externalLink aria-hidden="true" className="w-6 ml-4 text-muted-foreground hover:text-foreground " />
                 </Link>
               </CustomTooltip>
             )}
@@ -73,7 +83,7 @@ export default async function Project({ params }: ProjectPageProps) {
           >
             <Image
               src={profileImg}
-              alt={"naman"}
+              alt={siteConfig.authorName}
               width={42}
               height={42}
               className="rounded-full bg-background"
@@ -131,7 +141,7 @@ export default async function Project({ params }: ProjectPageProps) {
                 <Image
                   src={img}
                   key={ind}
-                  alt={img}
+                  alt={`${page.title} screenshot ${ind + 1}`}
                   width={720}
                   height={405}
                   className="my-4 rounded-md border bg-muted transition-colors"

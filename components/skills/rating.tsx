@@ -9,7 +9,11 @@ export default function Rating({ stars }: ratingProps) {
   }
 
   return (
-    <div className="flex items-center space-x-1">
+    <div
+      className="flex items-center space-x-1"
+      role="img"
+      aria-label={`${stars} out of 5`}
+    >
       {rating.map((val, ind) =>
         val === 1 ? (
           <svg

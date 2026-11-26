@@ -34,10 +34,16 @@ export function MainNav({ items, children }: MainNavProps) {
 
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
   const pathname = usePathname();
+  const menuButtonRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
     setShowMobileMenu(false);
   }, [pathname]);
+
+  const closeMobileMenu = React.useCallback(() => {
+    setShowMobileMenu(false);
+    menuButtonRef.current?.focus();
+  }, []);
 
   return (
     <div className="flex gap-6 md:gap-10">
@@ -81,16 +87,26 @@ export function MainNav({ items, children }: MainNavProps) {
         </nav>
       ) : null}
       <motion.button
+        ref={menuButtonRef}
+        type="button"
         className="flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
+        aria-expanded={showMobileMenu}
+        aria-controls="mobile-nav"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.menu />}
+        {showMobileMenu ? (
+          <Icons.close aria-hidden="true" />
+        ) : (
+          <Icons.menu aria-hidden="true" />
+        )}
         <span className="font-bold">Menu</span>
       </motion.button>
       {showMobileMenu && items && (
-        <MobileNav items={items}>{children}</MobileNav>
+        <MobileNav id="mobile-nav" items={items} onClose={closeMobileMenu}>
+          {children}
+        </MobileNav>
       )}
     </div>
   );

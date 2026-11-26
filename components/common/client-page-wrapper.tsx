@@ -8,12 +8,11 @@ interface ClientPageWrapperProps {
 }
 
 const pageVariants = {
+  // No opacity fade: page content must be visible at first paint (LCP, no-JS).
   initial: {
-    opacity: 0,
     y: 20,
   },
   animate: {
-    opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
@@ -28,6 +27,7 @@ export const ClientPageWrapper = ({ children }: ClientPageWrapperProps) => {
       initial="initial"
       animate="animate"
       variants={pageVariants}
+      data-animate
       className="w-full"
     >
       {children}

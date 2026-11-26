@@ -15,6 +15,8 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             <Link
               href={item.link}
               target="_blank"
+              rel="noreferrer"
+              aria-label={`${item.username} (opens in new tab)`}
               className={cn(
                 buttonVariants({
                   variant: "ghost",

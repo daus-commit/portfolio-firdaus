@@ -30,6 +30,7 @@ export const AnimatedSection = ({
   return (
     <motion.div
       id={id}
+      data-animate
       className={className}
       initial={{ opacity: 0, ...initialOffset }}
       whileInView={{
