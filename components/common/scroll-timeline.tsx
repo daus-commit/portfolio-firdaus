@@ -109,24 +109,28 @@ export function ScrollTimeline({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: reduceMotion ? 0 : 24 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
-          onMouseEnter={() => {
-            hovering.current = true;
+          // Mouse only: touch taps emit enter without a reliable leave.
+          onPointerEnter={(e) => {
+            if (e.pointerType === "mouse") hovering.current = true;
           }}
-          onMouseLeave={() => {
+          onPointerLeave={(e) => {
+            if (e.pointerType !== "mouse") return;
             hovering.current = false;
             scheduleHide();
           }}
-          onFocus={() => {
-            hovering.current = true;
+          // Keyboard focus only, so a tap on a dot doesn't pin the bar open.
+          onFocus={(e) => {
+            if (e.target.matches(":focus-visible")) hovering.current = true;
           }}
           onBlur={() => {
             hovering.current = false;
             scheduleHide();
           }}
-          className="pointer-events-none fixed inset-x-0 bottom-5 z-50 flex justify-center"
+          className="pointer-events-none fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 flex justify-center px-4 sm:bottom-5"
         >
-          <div className="pointer-events-auto relative rounded-full border border-border/60 bg-background/80 px-5 pb-3 pt-3 shadow-lg backdrop-blur-md">
-            <ol className="relative flex items-center gap-8 sm:gap-12">
+          {/* Fluid width: fills small screens (minus padding), capped on larger ones */}
+          <div className="pointer-events-auto relative w-full max-w-[22rem] rounded-full border border-border/60 bg-background/80 px-4 py-2.5 shadow-lg backdrop-blur-md sm:max-w-md sm:px-5 sm:py-3 md:max-w-lg">
+            <ol className="relative flex items-center justify-between">
               {/* rail */}
               <span
                 aria-hidden
@@ -142,6 +146,13 @@ export function ScrollTimeline({
               {sections.map((s, i) => {
                 const isActive = i === active;
                 const passed = i < active;
+                // Keep the label inside the viewport at both ends of the rail.
+                const labelAlign =
+                  i === 0
+                    ? "left-0"
+                    : i === sections.length - 1
+                      ? "right-0"
+                      : "left-1/2 -translate-x-1/2";
                 return (
                   <li
                     key={s.id}
@@ -149,7 +160,10 @@ export function ScrollTimeline({
                   >
                     {isActive && (
                       <span
-                        className="pointer-events-none absolute bottom-full left-1/2 mb-3 -translate-x-1/2 whitespace-nowrap rounded-md border border-primary/60 bg-background px-2.5 py-1 text-xs font-semibold shadow-md"
+                        className={cn(
+                          "pointer-events-none absolute bottom-full mb-3 whitespace-nowrap rounded-md border border-primary/60 bg-background px-2 py-0.5 text-[11px] font-semibold shadow-md sm:mb-3.5 sm:px-2.5 sm:py-1 sm:text-xs",
+                          labelAlign
+                        )}
                       >
                         {pad(i)} · {s.label}
                       </span>
@@ -160,7 +174,8 @@ export function ScrollTimeline({
                       aria-label={`Go to ${s.label}`}
                       aria-current={isActive ? "step" : undefined}
                       className={cn(
-                        "relative block rounded-full border-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+                        // after: enlarges the tap target to ~44px without changing the dot size
+                        "relative block rounded-full border-2 transition-all duration-200 after:absolute after:-inset-3 after:content-[''] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                         isActive
                           ? "h-5 w-5 border-background bg-primary shadow-[0_0_14px_hsl(var(--primary)/0.7)]"
                           : passed
