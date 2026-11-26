@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Firdaus Hakimi - Junior FullStack Developer with Fullstack Experience",
+  name: "Firdaus Hakimi - Junior Full-Stack Developer with Fullstack Experience",
   authorName: "Firdaus Hakimi.",
   username: "firdaushakimi",
   description:
-    "Firdaus Hakimi - Junior FullStack Developer with Fullstack Experience",
+    "Firdaus Hakimi - Junior Full-Stack Developer with Fullstack Experience",
   url: "https://nbarkiya.xyz",
   links: {
     twitter: "https://x.com/namanbarkiya",
@@ -18,8 +18,8 @@ export const siteConfig = {
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
   keywords: [
     "Firdaus Hakimi",
-    "Applied Junior FullStack Developer",
-    "Junior FullStack Developer with Fullstack Experience",
+    "Applied Junior Full-Stack Developer",
+    "Junior Full-Stack Developer with Fullstack Experience",
     "AI Engineer",
     "Software Engineer",
     "Full Stack Developer",

@@ -31,7 +31,7 @@ import CasestudiesCardClient from "./casestudies-card-client";
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Firdaus Hakimi - Junior FullStack Developer  working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Firdaus Hakimi - Junior Full-Stack Developer  working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -46,7 +46,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Junior FullStack Developer",
+    jobTitle: "Junior Full-Stack Developer",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
@@ -101,7 +101,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Firdaus Hakimi - Junior FullStack Developer Portfolio"
+            alt="Firdaus Hakimi - Junior Full-Stack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -116,7 +116,7 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Junior FullStack Developer 
+            Junior Full-Stack Developer 
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
